@@ -1,0 +1,8 @@
+services:
+  gitlab-runner1:
+    build:
+      dockerfile: Dockerfile
+    restart: always
+    hostname: 'comet.caleblab.loc'
+    volumes:
+      - '/Users/c.barthlome/gitlab/runner/config:/etc/gitlab-runner'
